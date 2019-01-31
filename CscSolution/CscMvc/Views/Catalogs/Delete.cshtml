@@ -1,0 +1,136 @@
+﻿@model CscMvc.Models.tbSystemCatalog
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>tbSystemCatalog</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CatalogCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CatalogCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CatalogPrefix)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CatalogPrefix)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CatalogName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CatalogName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OrderSeq)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OrderSeq)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TypeID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TypeID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ParentID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ParentID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Remark)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Remark)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EditFlag)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EditFlag)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DeleteFlag)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DeleteFlag)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CreateDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreateDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CreateBy)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreateBy)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ModifyDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ModifyDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ModifyBy)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ModifyBy)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ReferenceCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReferenceCode)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

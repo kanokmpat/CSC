@@ -1,0 +1,77 @@
+﻿@model CscMvc.Models.tbSystemCatalog
+
+
+
+<div>
+  
+
+  
+    <div class="box box-warning">
+        <div class="box-header with-border">
+            <h3 class="box-title">ข้อมูลทั่วไป</h3>
+        </div>
+        <!-- /.box-header -->
+        <div class="box-body">
+            <form role="form">
+                <div class="box-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>รหัส</label>
+                                <dt class="form-control my-colorpicker1 colorpicker-element">
+                                    @Html.DisplayFor(model => model.CatalogCode)
+                                </dt>
+                               
+                              </div>
+                            <!-- /.form-group -->
+                            <div class="form-group">
+                                <label>ชื่อย่อ</label>
+
+                                <dt class="form-control my-colorpicker1 colorpicker-element">
+                                    @Html.DisplayFor(model => model.CatalogPrefix)
+                                </dt>
+                            </div>
+                            <!-- /.form-group -->
+                        </div>
+                        <!-- /.col -->
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>ชือ</label>
+
+                                <dt class="form-control my-colorpicker1 colorpicker-element">
+                                    @Html.DisplayFor(model => model.CatalogName)
+                                </dt>
+                            </div>
+                            <!-- /.form-group -->
+                            <div class="form-group">
+                                <label>รายละเอียด</label>
+
+                                <dt class="form-control my-colorpicker1 colorpicker-element">
+                                    @Html.DisplayFor(model => model.Remark)
+                                </dt>
+                            </div>
+                            <!-- /.form-group -->
+                        </div>
+                       
+
+                        <!-- /.col -->
+                    </div>
+                    <!-- /.row -->
+                    @Html.ActionLink("แก้ไข", "Edit", new { id   = @Html.DisplayFor(model => model.ID), CatalogID = @Html.DisplayFor(model => model.CatalogID) },new { @class = "btn btn-primary" })
+                    @Html.ActionLink("กลับหน้าแรก", "Index", new { id = "", CatalogID = @Html.DisplayFor(model => model.CatalogID) }, new { @class = "btn btn-primary" })
+
+
+                 </div>
+
+            </form>
+        </div>
+        <!-- /.box-body -->
+    </div>
+</div>
+
+
+<p>
+
+</p>
+
+
